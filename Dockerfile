@@ -8,5 +8,5 @@ FROM busybox
 MAINTAINER Yassine BAZIZ
 ENV foo /bar
 WORKDIR ${foo}   # WORKDIR /bar
-ADD . $foo       # ADD . /bar
+ADD Dockerfile $foo       # ADD . /bar
 COPY \$foo /quux # COPY $foo /quux
