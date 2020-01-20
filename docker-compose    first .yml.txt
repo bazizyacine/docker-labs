@@ -1,0 +1,8 @@
+﻿version: '3'
+services:
+  db:
+    image: hichemlamine/game2048:game2048
+
+    
+  wordpress:
+    image: hichemlamine/tictactoe
