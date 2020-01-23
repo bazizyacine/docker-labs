@@ -1,0 +1,25 @@
+version: '2.4'
+
+services:
+  haproxy:
+    build: ./
+    ports:
+      - 80:80
+    networks:
+      - frontend
+      - backend
+  web1:
+    image: dockercloud/hello-world
+    networks:
+      - backend
+  web2:
+    image: dockercloud/hello-world
+    networks:
+      - backend
+  web3:
+    image: dockercloud/hello-world
+    networks:
+      - backend
+networks:
+  frontend:  
+  backend:  
